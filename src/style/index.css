@@ -1,20 +1,10 @@
 @import './reset.css';
 
 :root {
-    --app-body-box-shadow: 0 0.275rem 1.25rem rgb(11 15 25 / 5%), 0 0.25rem 0.5625rem rgb(11 15 25 / 3%);
-    --app-gray-section: #f3f6ff;
-    --app-button-background-color: #00be7f;
-    --app-button-hover-background-color: #027e55;
-    --app-gray-title: #9b9b9b;
-    --app-gray-content: #868585;
-    --app-gray-background:#f2f3f7; 
-    --app-dark-bg: #1a1d28;
     --app-medium-gray: #2a2b31;
     --app-light-gray: #f9f9f9;
     --app-button-color: #ff3737;
     --app-button-hover-color: #ff0404;
-    --app-text-title-color: #00e6e6;
-    --app-text-title-hover: #00d2d2;
 }
 
 
@@ -24,10 +14,8 @@ main {
 }
 
 body {
-    /* background-color: #1a1926; */
     background-color: #020202;
     background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
-
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
 }
 
@@ -45,7 +33,7 @@ body {
 .flex {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 header {
@@ -53,16 +41,16 @@ header {
     line-height: 55px;
     box-shadow: var(--app-body-box-shadow);
     display: flex;
-    /* background-color: transparent; */
     justify-content: space-between;
     background-color: var(--app-medium-gray);
-    /* margin-bottom: 40px; */
+
 }
 
-h1{
+h1 {
     color: white;
 }
-h1 span{
+
+h1 span {
     color: var(--app-button-color);
 }
 
@@ -76,7 +64,7 @@ nav ul {
 
 nav ul li a {
     display: inline-block;
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 0 10px;
@@ -91,9 +79,10 @@ nav ul li a:hover {
     background-color: var(--app-button-hover-color);
 }
 
-input[type=button], input[type=submit] {
+input[type=button],
+input[type=submit] {
     width: 115px;
-    height:35px;
+    height: 35px;
     border-radius: 5px;
     margin-left: 10px;
     font-size: 14px;
@@ -101,20 +90,22 @@ input[type=button], input[type=submit] {
     color: #fff;
     cursor: pointer;
     transition: all 0.25s ease-in-out;
-  
+
 }
 
 input[type=button]:hover {
     background-color: var(--app-button-hover-color);
 }
 
-.addBtn, .submit,  .watch-now,.returnBtn {
+.addBtn,
+.submit,
+.returnBtn {
     background-color: var(--app-button-color);
     border: 1px solid var(--app-button-color);
 }
 
 /*----------------------------------------*/
-/*  Catalog                         */
+/*  Catalog                               */
 /*----------------------------------------*/
 
 .sort-div {
@@ -122,7 +113,7 @@ input[type=button]:hover {
     margin-top: 38px;
 }
 
-.sort-div .sorting{
+.sort-div .sorting {
     background-color: #e23f3f;
 }
 
@@ -132,8 +123,9 @@ input[type=button]:hover {
     grid-template-columns: 0.36fr 0.64fr;
     gap: 10px;
     place-items: center;
-    
+
 }
+
 .result-container {
     width: 100%;
     display: grid;
@@ -141,7 +133,7 @@ input[type=button]:hover {
     gap: 30px;
     margin-top: 35px;
     margin-bottom: 35px;
-  }
+}
 
 .catalog p {
     color: var(--app-light-gray);
@@ -154,9 +146,10 @@ input[type=button]:hover {
     flex-direction: row;
     justify-content: space-between;
 }
-.character-name  p{
+
+.character-name p {
     font-size: 17px;
-   
+
 }
 
 figure img {
@@ -164,39 +157,36 @@ figure img {
     height: 30px;
     width: 50px;
 }
-.character-image{
+
+.character-image {
     width: 100%;
     height: 100%;
-    border-radius: 10px ;
-    
+    border-radius: 10px;
 }
 
 .character-item {
     padding: 3px;
-    border: 1px solid ;
+    border: 1px solid;
     text-decoration: none;
     transition: all 0.70s ease-in-out;
-    
-    /* margin-bottom: 20px; */
-    /* margin-top: 30px; */
 }
-.elipse{
+
+.elipse {
     width: 50%;
     text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
-
+    overflow: hidden;
+    white-space: nowrap;
 }
-.gender{
+
+.gender {
     width: 50%;
     text-align: right;
 }
 
 .character-item:hover {
-    /* border-color: var(--app-gray-content); */
     cursor: pointer;
     transform: translateY(-5px);
-    box-shadow: -1px 6px 25px 8px rgba(0, 0, 0, 0.56);;
+    box-shadow: -1px 6px 25px 8px rgba(0, 0, 0, 0.56);
 }
 
 a {
@@ -220,9 +210,9 @@ footer {
     place-content: center;
     line-height: 55px;
     /* position: fixed; */
-  }
+}
 
-  /*----------------------------------------*/
+/*----------------------------------------*/
 /*Page Not Found                          */
 /*----------------------------------------*/
 
@@ -235,18 +225,18 @@ footer {
 
 .notFound img {
     border-radius: 20px;
-
     padding: 15px;
-    /* border-radius: 50%; */
 }
 
 .content {
     text-align: center;
 }
-.content h1{
+
+.content h1 {
     color: black;
     font-size: 35px;
 }
+
 .content p {
     color: black;
     font-size: 22px;
@@ -270,8 +260,9 @@ footer {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 110px);
-  }
-  .center .name{
+}
+
+.center .name {
     color: white;
     place-content: center;
     text-align: center;
@@ -281,65 +272,73 @@ footer {
     letter-spacing: 2px;
     color: var(--app-button-hover-color);
     font-family: 'Times New Roman', Times, serif;
-  }
-  .character-details {
+}
+
+.character-details {
     height: 50%;
     display: flex;
     gap: 20px;
-   /* margin-top: -150px; */
-  }
-  .character-details figure img {
+    /* margin-top: -150px; */
+}
+
+.character-details figure img {
     margin-right: 80px;
     border: none;
     height: 100%;
     width: 100%;
     place-items: center;
     border-radius: 20px;
-    
-  }
-  .character-details .detail {
+
+}
+
+.character-details .detail {
     color: #fff;
     font-size: 1.8rem;
     margin-top: 25px;
-  }
-  .character-details .detail h2 {
+}
+
+.character-details .detail h2 {
     margin-bottom: 10px;
-  }
-  .character-details .detail p + p {
+}
+
+.character-details .detail p+p {
     margin-top: 10px;
-  }
-  .gray {
+}
+
+.gray {
     color: #9e9e9e;
     font-weight: 300;
-  }
-  .character-details .detail p:last-child {
+}
+
+.character-details .detail p:last-child {
     margin-top: 10px;
-  }
-  
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - */
 /* new                                         */
 /* - - - - - - - - - - - - - - - - - - - - - - */
-  .addForm {
+.addForm {
     display: grid;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 110px);
-
     background: #fff url("https://wallpapers.com/images/hd/rick-and-morty-unamused-rick-agpuysmhk3lhdl4p.jpg") center center / cover no-repeat;
     place-items: center;
 
-  }
- 
-  .addForm form {
+}
+
+.addForm form {
     height: 80%;
-  }
-  .addForm h2 {
+}
+
+.addForm h2 {
     margin-bottom: 30px;
     font-size: 4rem;
-    color:white;
-  }
-  
-  .addForm input, .addForm select {
+    color: white;
+}
+
+.addForm input,
+.addForm select {
     height: 45px;
     width: 100%;
     border: none;
@@ -348,29 +347,35 @@ footer {
     border-radius: 6px;
     padding: 10px;
     font-size: 1.6rem;
-  }
-  .addForm p {
+}
+
+.addForm p {
     height: 25px;
     line-height: 25px;
     font-size: 1.4rem;
     color: #db5a6b;
-  }
-  .addForm select {
+}
+
+.addForm select {
     margin-bottom: 25px;
-  }
-  .addForm input[type=submit] {
+}
+
+.addForm input[type=submit] {
     background-color: #0085ff;
     color: #fff;
     height: 45px;
     width: 100%;
     margin-left: -1px;
-  }
-  .message p{
+}
+
+.message p {
     color: red;
-  }
-  .addForm input[type=submit]:hover {
+}
+
+.addForm input[type=submit]:hover {
     background-color: var(--app-button-color);
-  }
-  .addForm input[type=submit]:disabled {
+}
+
+.addForm input[type=submit]:disabled {
     background-color: var(--app-button-hover-color);
-  }
+}

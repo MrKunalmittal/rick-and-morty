@@ -10,12 +10,12 @@ function Catalog() {
     
 
     const navigate = useNavigate();
-    const page1 = `https://rickandmortyapi.com/api/character`;
+    const url = `https://rickandmortyapi.com/api/character`;
     
     useEffect(() => {
         const fetchCharacters = async () => {
             try {
-                const characters = await axios.get(page1);
+                const characters = await axios.get(url);
 
                 const characterArray = characters.data.results;
                 setCharacters(characterArray);

@@ -29,7 +29,6 @@ function Detail() {
         setOrigin(data.origin.name);
         setSpecies(data.species);
         setStatus(data.status);
-        
         setLocation(data.location.name);
       } catch (error) {
         console.log(error);
@@ -60,7 +59,7 @@ function Detail() {
           <p>
             <span>{status}</span> - <span>{species}</span>
           </p>
-          <p className='gray'>Last known location:</p><span>{location}</span>
+          <p className='gray'>Last location:</p><span>{location}</span>
           
         </div>
         
